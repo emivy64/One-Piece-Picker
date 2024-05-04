@@ -236,10 +236,16 @@ button.disabled:hover {
 var items = [
     {id: 'luffy', name: 'Monkey D. Luffy', image: 'https://file.garden/ZXJPYztcLzaPWOXH/Icons/One%20Piece/S07%20-%20Fishmen%20Island/001%20-%20Luffy%20(04)'},
     {id: 'roger', name: 'Gol D. Roger', image: 'https://file.garden/ZXJPYztcLzaPWOXH/Icons/One%20Piece/S12%20-%20Wano/002%20-%20Roger%20(02)'},
+    {id: 'shanks', name: 'Shanks', image: 'https://file.garden/ZXJPYztcLzaPWOXH/Icons/One%20Piece/S12%20-%20Wano/003%20-%20Shanks%20(03)'},
+    {id: 'zoro', name: 'Roronoa Zoro', image: 'https://file.garden/ZXJPYztcLzaPWOXH/Icons/One%20Piece/S07%20-%20Fishmen%20Island/013%20-%20Zoro%20(06)'},
+    {id: 'nami', name: 'Nami', image: 'https://file.garden/ZXJPYztcLzaPWOXH/Icons/One%20Piece/S07%20-%20Fishmen%20Island/019%20-%20Nami%20(07)'},
+    {id: 'usopp', name: 'Usopp', image: 'https://file.garden/ZXJPYztcLzaPWOXH/Icons/One%20Piece/S07%20-%20Fishmen%20Island/028%20-%20Usopp%20(07)'},
+    {id: 'sanji', name: 'Vinsmoke Sanji', image: 'https://file.garden/ZXJPYztcLzaPWOXH/Icons/One%20Piece/S07%20-%20Fishmen%20Island/042%20-%20Sanji%20(07)'},
 ];
 
 var myPicker = new picker.Picker({
-    items: items
+    items: items,
+    localStorageKey: 'picker-state'
 });
 
 var pickerUI = new PickerUI(myPicker, {
