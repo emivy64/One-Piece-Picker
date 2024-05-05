@@ -206,7 +206,7 @@ button.disabled:hover {
 </style>
 </head>
 <body>
-<h1>Picker</h1>
+<h1>One Piece Character Picker</h1>
 
 <p>Choose the characters you like to make a list of your favorites.</p>
 
@@ -333,7 +333,10 @@ var pickerUI = new PickerUI(myPicker, {
         redo: "#redo",
         evaluating: "#evaluating",
         favorites: "#favorites"
+        settings: {
+        maxBatchSize: '#max-batch-size'
     }
+}
 });
 
 pickerUI.initialize();
